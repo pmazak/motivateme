@@ -1,4 +1,7 @@
 Motivateme::Application.routes.draw do
+  get "goals/create"
+  match "goals" => "goals#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

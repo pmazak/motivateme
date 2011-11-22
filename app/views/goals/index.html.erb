@@ -1,0 +1,16 @@
+<h1>Listing goals</h1>
+ 
+<table>
+  <tr>
+    <th>Person</th>
+    <th>Text</th>
+    <th>Id</th>
+  </tr>
+<% @goals.each do |goal| %>
+  <tr>
+    <td><%= goal.person %></td>
+    <td><%= goal.text %></td>
+    <td><%= goal %></td>
+  </tr>
+<% end %>
+</table>
